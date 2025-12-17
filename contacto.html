@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Molino Rosales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Molino Rosales" class="logo-image">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                    <li class="nav-separator">|</li>
+                    <li class="nav-item"><a href="finca.html" class="nav-link">FINCA</a></li>
+                    <li class="nav-separator">|</li>
+                    <li class="nav-item"><a href="bodas.html" class="nav-link">BODAS</a></li>
+                    <li class="nav-separator">|</li>
+                    <li class="nav-item"><a href="eventos.html" class="nav-link">EVENTOS</a></li>
+                    <li class="nav-separator">|</li>
+                    <li class="nav-item"><a href="#rodajes" class="nav-link">RODAJES</a></li>
+                    <li class="nav-separator">|</li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link active">CONTACTO</a></li>
+                </ul>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Content -->
+    <main class="contact-page">
+        <div class="container">
+            <!-- Contact Header -->
+            <section class="contact-header">
+                <div class="contact-illustration">
+                    <img src="images/contacto.png" alt="Contacto" class="illustration">
+                </div>
+                <div class="contact-divider"></div>
+                <h1 class="contact-title">CONTÁCTANOS</h1>
+                <p class="contact-subtitle">
+                    Vive una experiencia excepcional en nuestra finca.<br>
+                    Nosotros nos encargamos de todo
+                </p>
+            </section>
+
+            <!-- Contact Content Grid -->
+            <section class="contact-content">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nombre y apellidos</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="guests">Número de comensales</label>
+                                <input type="number" id="guests" name="guests" min="1">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="date">Fecha</label>
+                                <input type="date" id="date" name="date">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="postal">Código postal</label>
+                                <input type="text" id="postal" name="postal">
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Cuéntanos sobre tu evento..."></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar mensaje
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Image -->
+                    <div class="contact-image">
+                        <img src="images/contacto-bg.png" alt="Molino Rosales - Bienvenidos">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Info -->
+            <section class="contact-info">
+                <h2 class="info-title">VISÍTANOS</h2>
+                
+                <div class="info-grid">
+                    <div class="info-details">
+                        <div class="info-item">
+                            <h3>Molino San Miguel de Rosales</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Carretera N-320 Guadalajara, Km 257, 19140 Horche, Guadalajara</p>
+                        </div>
+
+                        <div class="info-item">
+                            <p><i class="fas fa-phone"></i> <a href="tel:+34686943435">+34 686 943 435</a></p>
+                        </div>
+
+                        <div class="info-item">
+                            <p><i class="fas fa-envelope"></i> <a href="mailto:hola@molino.rosales.com">hola@molino.rosales.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.1234567890123!2d-3.1234567890123456!3d40.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDA3JzI0LjQiTiAzwrAwNycyNC40Ilc!5e0!3m2!1ses!2ses!4v1234567890123"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Molino Rosales">
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://wa.me/" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://instagram.com/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

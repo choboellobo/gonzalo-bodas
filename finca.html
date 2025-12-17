@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finca - Molino Rosales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Molino Rosales" class="logo-image">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                    <li class="nav-separator">|</li>
+                    <li class="nav-item"><a href="finca.html" class="nav-link active">FINCA</a></li>
+                    <li class="nav-separator">|</li>
+                    <li class="nav-item"><a href="bodas.html" class="nav-link">BODAS</a></li>
+                    <li class="nav-separator">|</li>
+                    <li class="nav-item"><a href="eventos.html" class="nav-link">EVENTOS</a></li>
+                    <li class="nav-separator">|</li>
+                    <li class="nav-item"><a href="#rodajes" class="nav-link">RODAJES</a></li>
+                    <li class="nav-separator">|</li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+                </ul>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Finca Content -->
+    <main class="finca-page">
+        <div class="container">
+            <!-- Finca Header -->
+            <section class="finca-header">
+                <div class="finca-illustration">
+                    <img src="images/finca.png" alt="Molino Rosales Illustration" class="illustration">
+                </div>
+                <div class="finca-divider"></div>
+                <h1 class="finca-title">FINCA</h1>
+            </section>
+
+            <!-- Finca Description -->
+            <section class="finca-description">
+                <div class="description-content">
+                    <p class="description-text">
+                        Este edificio histórico, que data del siglo XVI, fue originalmente un molino harinero y sus 
+                        arcos originales aún se conservan como testimonio de su rica historia.
+                    </p>
+                    <p class="description-text">
+                        La casa actual fue reconstruida sobre los cimientos del molino original, conservando su 
+                        encanto y carácter únicos.
+                    </p>
+                    <p class="description-text">
+                        La atraviesa el río Ungría, que la divide en dos partes, unidas por un puente, creando varios 
+                        espacios diferentes para poder diseñar su evento a su gusto
+                    </p>
+                    <p class="description-text">
+                        Si desea conocerla en detalle puede reservar una visita o explorar el jardín a través de 
+                        nuestro Tour 360°.
+                    </p>
+                </div>
+                
+                <!-- Tour 360 Button -->
+                <div class="tour-button-container">
+                    <a href="https://woow360.com/es/eventos-marketing-y-publicidad+horche/finca-molino-rosales-p-3850.html?fbclid=IwAR25dCCdC8fnNTOG9BCQNQQBIMgo4Z2MvKskZrz1Bs2zeUvhLfEXQR-8nxzA" 
+                       target="_blank" 
+                       class="tour-button">
+                        <i class="fas fa-globe"></i>
+                        <span>Tour 360°</span>
+                    </a>
+                </div>
+
+                <!-- Dossier Button -->
+                <div class="dossier-button-container">
+                    <a href="images/Dosier Molino Rosales.pdf" target="_blank" class="dossier-button">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>DESCARGAR DOSSIER</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Finca Gallery -->
+            <section class="finca-gallery">
+                <h2 class="gallery-title">Galería de la Finca</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox('images/finca/finca-agua.jpg')">
+                        <img src="images/finca/finca-agua.jpg" alt="Finca Molino Rosales - Agua">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/finca/finca_alto.jpg')">
+                        <img src="images/finca/finca_alto.jpg" alt="Finca Molino Rosales - Vista Alta">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/finca/myegoo_20140611114351editar2_o.jpg')">
+                        <img src="images/finca/myegoo_20140611114351editar2_o.jpg" alt="Finca Molino Rosales">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/finca/myegoo_20170514080109min_o.jpg')">
+                        <img src="images/finca/myegoo_20170514080109min_o.jpg" alt="Finca Molino Rosales">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/finca/myegoo_bmolinodos2_o.jpg')">
+                        <img src="images/finca/myegoo_bmolinodos2_o.jpg" alt="Finca Molino Rosales - Molino">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/finca/myegoo_puente1749w_o.jpg')">
+                        <img src="images/finca/myegoo_puente1749w_o.jpg" alt="Finca Molino Rosales - Puente">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/finca/myegoo_vistadelazonadelestanquedenochepeque_o.jpg')">
+                        <img src="images/finca/myegoo_vistadelazonadelestanquedenochepeque_o.jpg" alt="Finca Molino Rosales - Estanque Noche">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-img" class="lightbox-content" alt="">
+            <div class="lightbox-nav">
+                <button class="lightbox-prev" onclick="event.stopPropagation(); prevImage()">&#10094;</button>
+                <button class="lightbox-next" onclick="event.stopPropagation(); nextImage()">&#10095;</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Molino Rosales">
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://wa.me/" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://instagram.com/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
