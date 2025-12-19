@@ -295,6 +295,51 @@ body {
     }
 }
 
+/* Scroll Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
 /* Hero Section */
 .hero {
     max-width: 1200px;
@@ -1336,6 +1381,41 @@ body {
     
     .dossier-button i {
         font-size: 16px;
+    }
+}
+
+/* Rodajes Image Styles */
+.rodajes-image-container {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.rodajes-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rodajes-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .rodajes-image-container {
+        margin: 40px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .rodajes-image-container {
+        margin: 30px 0;
+    }
+    
+    .rodajes-image {
+        border-radius: 8px;
     }
 }
 

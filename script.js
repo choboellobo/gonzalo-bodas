@@ -67,6 +67,45 @@ document.addEventListener('click', (e) => {
     }
 });
 
+// Scroll animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, observerOptions);
+
+// Initialize scroll animations when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Add animation classes to elements
+    const animateElements = [
+        { selector: '.finca-header, .contact-header, .wedding-planner-header, .catering-header, .fotografo-header, .musica-header', class: 'fade-in' },
+        { selector: '.description-content, .finca-description, .contact-content, .wedding-planner-text', class: 'fade-in' },
+        { selector: '.grid-container .grid-item:nth-child(odd)', class: 'slide-in-left' },
+        { selector: '.grid-container .grid-item:nth-child(even)', class: 'slide-in-right' },
+        { selector: '.gallery-grid .gallery-item', class: 'scale-in' },
+        { selector: '.bodas-grid .bodas-grid-item', class: 'fade-in' },
+        { selector: '.services-grid .service-item', class: 'scale-in' },
+        { selector: '.catering-links .catering-link, .fotografo-links .fotografo-link, .musica-links .musica-link', class: 'fade-in' },
+        { selector: '.tour-button, .dossier-button', class: 'scale-in' }
+    ];
+
+    animateElements.forEach(({ selector, class: animClass }) => {
+        const elements = document.querySelectorAll(selector);
+        elements.forEach((el, index) => {
+            el.classList.add(animClass);
+            el.style.transitionDelay = `${index * 0.1}s`;
+            observer.observe(el);
+        });
+    });
+});
+
 // Lightbox functionality
 const images = [
     'images/finca/finca-agua.jpg',
