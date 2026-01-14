@@ -3,12 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Molino Rosales - Finca · Catering · Eventos</title>
+    <title>Finca Molino San Miguel de Rosales</title>
+    <meta name="description" content="Molino San Miguel de Rosales, finca histórica en Madrid para bodas, eventos, rodajes y celebraciones. Catering, wedding planner y servicios completos.">
+    <meta name="keywords" content="molino rosales, finca Madrid, bodas Madrid, eventos Madrid, catering Madrid, rodajes, wedding planner, celebraciones rusticas">
+    <meta name="author" content="Molino Rosales">
+    <link rel="canonical" href="https://molinorosales.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://molinorosales.com/">
+    <meta property="og:title" content="Molino San Miguel de Rosales - Finca para Bodas y Eventos en Madrid">
+    <meta property="og:description" content="Molino San Miguel de Rosales, finca histórica en Madrid para bodas, eventos, rodajes y celebraciones. Catering, wedding planner y servicios completos.">
+    <meta property="og:image" content="https://molinorosales.com/images/logo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://molinorosales.com/">
+    <meta property="twitter:title" content="Molino San Miguel de Rosales - Finca para Bodas y Eventos en Madrid">
+    <meta property="twitter:description" content="Molino San Miguel de Rosales, finca histórica en Madrid para bodas, eventos, rodajes y celebraciones.">
+    <meta property="twitter:image" content="https://molinorosales.com/images/logo.png">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EventVenue",
+      "name": "Molino San Miguel de Rosales",
+      "description": "Finca histórica en Madrid para bodas, eventos, rodajes y celebraciones. Servicios completos de catering y wedding planner.",
+      "url": "https://molinorosales.com/",
+      "telephone": "+34-XXX-XXX-XXX",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Madrid",
+        "addressCountry": "ES"
+      },
+      "image": "https://molinorosales.com/images/logo.png",
+      "priceRange": "€€€",
+      "hasMap": "https://maps.google.com/",
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Wedding Venue"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Event Catering"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Film Location"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Historic Venue"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -18,7 +75,7 @@
             <div class="logo-section">
                 <div class="logo-container">
                     <a href="index.html">
-                        <img src="images/logo.png" alt="Molino Rosales" class="logo-image">
+                        <img src="images/logo.png" alt="Molino Rosales" class="logo-image logo">
                     </a>
                 </div>
             </div>
@@ -58,28 +115,28 @@
     <section class="grid-section">
         <div class="grid-container">
             <!-- Bodas -->
-            <div class="grid-item third">
-                <img src="images/b55cfdb062b62c2a59cce0986c22d4c0.jpg" alt="Bodas">
+            <a href="bodas.html" class="grid-item third">
+                <img src="images/855d34ae737cdec8200449ee5f11e934.jpg" alt="Bodas">
                 <div class="overlay">
                     <h2>BODAS</h2>
                 </div>
-            </div>
+            </a>
 
             <!-- Eventos -->
-            <div class="grid-item third">
-                <img src="images/855d34ae737cdec8200449ee5f11e934.jpg" alt="Eventos">
+            <a href="eventos.html" class="grid-item third">
+                <img src="images/89b2f04005508def527ed363e171eae9.jpg" alt="Eventos">
                 <div class="overlay">
                     <h2>EVENTOS</h2>
                 </div>
-            </div>
+            </a>
 
             <!-- Rodajes -->
-            <div class="grid-item third">
+            <a href="rodajes.html" class="grid-item third">
                 <img src="images/89b2f04005508def527ed363e171eae9.jpg" alt="Rodajes">
                 <div class="overlay">
                     <h2>RODAJES</h2>
                 </div>
-            </div>
+            </a>
 
             <!-- Finca -->
             <a href="finca.html" class="grid-item finca">
@@ -90,20 +147,20 @@
             </a>
 
             <!-- Wedding Planning -->
-            <div class="grid-item half">
+            <a href="bodas.html" class="grid-item half">
                 <img src="images/be4edf2c59b52141a6619e89f1f06157.jpg" alt="Wedding Planning">
                 <div class="overlay">
                     <h2>WEDDING<br>PLANNING</h2>
                 </div>
-            </div>
+            </a>
 
             <!-- Contacto -->
-            <div class="grid-item half">
+            <a href="contacto.html" class="grid-item half">
                 <img src="images/a5cb20d00e84656ffb944bcf2acbd39a.jpg" alt="Contacto">
                 <div class="overlay">
                     <h2>CONTACTO</h2>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -144,5 +201,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="js/site-loader.js"></script>
 </body>
 </html>

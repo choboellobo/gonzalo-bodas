@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Molino Rosales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <!-- Admin Header -->
+    <header class="admin-header">
+        <div class="admin-container">
+            <h1><i class="fas fa-cog"></i> Panel de Administración - Molino Rosales</h1>
+            <div class="header-actions">
+                <button class="save-all-btn" onclick="saveAll()">
+                    <i class="fas fa-save"></i> Guardar Todos los Cambios
+                </button>
+                <button class="btn-secondary" onclick="previewChanges()" title="Ver cambios en nueva ventana">
+                    <i class="fas fa-external-link-alt"></i> Vista Previa
+                </button>
+                <button class="logout-btn" onclick="logout()" title="Cerrar sesión">
+                    <i class="fas fa-sign-out-alt"></i> Salir
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Admin Navigation -->
+    <nav class="admin-nav">
+        <div class="admin-container">
+            <div class="nav-tabs">
+                <button class="tab-btn active" onclick="showTab('pages', event)">
+                    <i class="fas fa-file-alt"></i> Páginas
+                </button>
+                <button class="tab-btn" onclick="showTab('images', event)">
+                    <i class="fas fa-images"></i> Imágenes
+                </button>
+                <button class="tab-btn" onclick="showTab('links', event)">
+                    <i class="fas fa-link"></i> Enlaces
+                </button>
+                <button class="tab-btn" onclick="showTab('settings', event)">
+                    <i class="fas fa-cogs"></i> Configuración
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Admin Content -->
+    <main class="admin-main">
+        <div class="admin-container">
+            
+            <!-- Pages Tab -->
+            <div id="pages-tab" class="tab-content active">
+                <h2>Editar Contenido de Páginas</h2>
+                
+                <!-- Page Selector -->
+                <div class="page-selector">
+                    <label for="page-select">Seleccionar Página:</label>
+                    <select id="page-select" onchange="loadPageContent()">
+                        <option value="index">Inicio</option>
+                        <option value="finca">Finca</option>
+                        <option value="bodas">Bodas</option>
+                        <option value="eventos">Eventos</option>
+                        <option value="rodajes">Rodajes</option>
+                        <option value="contacto">Contacto</option>
+                    </select>
+                </div>
+
+                <!-- Content Editor -->
+                <div id="content-editor" class="content-editor">
+                    <!-- Dynamic content will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Images Tab -->
+            <div id="images-tab" class="tab-content">
+                <h2>Gestión de Imágenes</h2>
+                
+                <div class="upload-section">
+                    <h3>Subir Nueva Imagen</h3>
+                    <div class="upload-area" onclick="document.getElementById('file-input').click()">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Haz click para subir una imagen o arrastra aquí</p>
+                        <input type="file" id="file-input" accept="image/*" multiple style="display: none;" onchange="handleFileUpload(event)">
+                    </div>
+                </div>
+
+                <div class="images-grid" id="images-grid">
+                    <!-- Images will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Links Tab -->
+            <div id="links-tab" class="tab-content">
+                <h2>Gestión de Enlaces</h2>
+                
+                <div class="links-section">
+                    <h3>Enlaces de Catering</h3>
+                    <div id="catering-links" class="links-container">
+                        <!-- Links will be loaded here -->
+                    </div>
+                    
+                    <h3>Enlaces de Fotógrafos</h3>
+                    <div id="fotografo-links" class="links-container">
+                        <!-- Links will be loaded here -->
+                    </div>
+                    
+                    <h3>Enlaces de Música</h3>
+                    <div id="musica-links" class="links-container">
+                        <!-- Links will be loaded here -->
+                    </div>
+                    
+                    <h3>Redes Sociales</h3>
+                    <div id="social-links" class="links-container">
+                        <!-- Links will be loaded here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Settings Tab -->
+            <div id="settings-tab" class="tab-content">
+                <h2>Configuración General</h2>
+                
+                <div class="settings-section">
+                    <h3>Información de Contacto</h3>
+                    <div class="form-group">
+                        <label for="phone">Teléfono:</label>
+                        <input type="tel" id="phone" placeholder="+34 686 943 435">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="info@molinorosales.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Dirección:</label>
+                        <input type="text" id="address" placeholder="Finca San Miguel, Rosales del Canal">
+                    </div>
+                    
+                    <h3>SEO</h3>
+                    <div class="form-group">
+                        <label for="meta-description">Meta Descripción:</label>
+                        <textarea id="meta-description" placeholder="Descripción para motores de búsqueda"></textarea>
+                    </div>
+                    
+                    <h3>Backup y Restauración</h3>
+                    <div class="backup-section">
+                        <button class="btn-secondary" onclick="createBackup()">
+                            <i class="fas fa-download"></i> Descargar Backup
+                        </button>
+                        <button class="btn-secondary" onclick="adminPanel.downloadJSON()">
+                            <i class="fas fa-file-export"></i> Exportar JSON
+                        </button>
+                        <button class="btn-secondary" onclick="document.getElementById('restore-input').click()">
+                            <i class="fas fa-upload"></i> Restaurar Backup
+                        </button>
+                        <input type="file" id="restore-input" accept=".json" style="display: none;" onchange="restoreBackup(event)">
+                        <p class="settings-note">
+                            <i class="fas fa-info-circle"></i>
+                            El backup incluye todos los datos del sitio. Los cambios se guardan automáticamente en el servidor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Success/Error Messages -->
+    <div id="message-container" class="message-container"></div>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>

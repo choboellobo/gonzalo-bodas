@@ -3,12 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bodas - Molino Rosales</title>
+    <title>Bodas en Molino Rosales - Finca para Bodas en Madrid | Wedding Planner</title>
+    <meta name="description" content="Celebra tu boda perfecta en Molino San Miguel de Rosales. Finca histórica para bodas en Madrid con catering, fotografía y música. Wedding planner completo.">
+    <meta name="keywords" content="bodas Madrid, finca bodas, wedding planner Madrid, catering bodas, molino rosales, bodas rusticas, celebraciones Madrid">
+    <meta name="author" content="Molino Rosales">
+    <link rel="canonical" href="https://molinorosales.com/bodas.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://molinorosales.com/bodas.html">
+    <meta property="og:title" content="Bodas en Molino Rosales - Finca para Bodas en Madrid">
+    <meta property="og:description" content="Celebra tu boda perfecta en Molino San Miguel de Rosales. Finca histórica para bodas en Madrid con catering, fotografía y música.">
+    <meta property="og:image" content="https://molinorosales.com/images/bodas/414f3d756ca97ab54bf781b0a848f081.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://molinorosales.com/bodas.html">
+    <meta property="twitter:title" content="Bodas en Molino Rosales - Finca para Bodas en Madrid">
+    <meta property="twitter:description" content="Celebra tu boda perfecta en Molino San Miguel de Rosales. Finca histórica para bodas en Madrid con catering, fotografía y música.">
+    <meta property="twitter:image" content="https://molinorosales.com/images/bodas/414f3d756ca97ab54bf781b0a848f081.jpg">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WeddingVenue",
+      "name": "Molino San Miguel de Rosales",
+      "description": "Finca histórica para bodas y eventos en Madrid. Wedding planner completo con catering, fotografía y música.",
+      "url": "https://molinorosales.com/bodas.html",
+      "telephone": "+34-XXX-XXX-XXX",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Madrid",
+        "addressCountry": "ES"
+      },
+      "image": "https://molinorosales.com/images/bodas/414f3d756ca97ab54bf781b0a848f081.jpg",
+      "priceRange": "€€€",
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Catering Service"
+        },
+        {
+          "@type": "LocationFeatureSpecification", 
+          "name": "Wedding Planning"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Photography Services"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Music Services"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -49,6 +105,24 @@
         </div>
     </header>
 
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <div class="container">
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="index.html">
+                        <span itemprop="name">Inicio</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">Bodas</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+        </div>
+    </nav>
+
     <!-- Bodas Content -->
     <main class="finca-page">
         <div class="container">
@@ -80,13 +154,22 @@
                 <div class="container">
                     <div class="bodas-grid">
                         <div class="bodas-grid-item full-width">
-                            <img src="images/bodas/414f3d756ca97ab54bf781b0a848f081.jpg" alt="Boda en Molino Rosales">
+                            <img src="images/bodas/414f3d756ca97ab54bf781b0a848f081.jpg" 
+                                 alt="Celebración de boda elegante en el patio principal del Molino San Miguel de Rosales"
+                                 loading="lazy"
+                                 width="800" height="400">
                         </div>
                         <div class="bodas-grid-item half-width">
-                            <img src="images/bodas/1d35a91a3be881201cb33ae7a7021eb4.png" alt="Celebración de boda">
+                            <img src="images/bodas/1d35a91a3be881201cb33ae7a7021eb4.png" 
+                                 alt="Mesa nupcial decorada con flores en el salón histórico del molino"
+                                 loading="lazy"
+                                 width="400" height="300">
                         </div>
                         <div class="bodas-grid-item half-width">
-                            <img src="images/bodas/bdf7e059bc8ca9a61de14e34e5c91756.jpg" alt="Evento de boda">
+                            <img src="images/bodas/bdf7e059bc8ca9a61de14e34e5c91756.jpg" 
+                                 alt="Ceremonia de boda al aire libre en los jardines del Molino Rosales"
+                                 loading="lazy"
+                                 width="400" height="300">
                         </div>
                     </div>
                 </div>
@@ -111,15 +194,21 @@
                     <!-- Services Grid -->
                     <div class="services-grid">
                         <a href="#catering" class="service-item">
-                            <img src="images/catering.png" alt="Catering">
+                            <div class="service-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
                             <h3>CATERING</h3>
                         </a>
                         <a href="#fotografo" class="service-item">
-                            <img src="images/fotografo.png" alt="Fotógrafo">
+                            <div class="service-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
                             <h3>FOTÓGRAFO</h3>
                         </a>
                         <a href="#musica" class="service-item">
-                            <img src="images/musica.png" alt="Música">
+                            <div class="service-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
                             <h3>MÚSICA</h3>
                         </a>
                     </div>
@@ -269,5 +358,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="js/site-loader.js"></script>
 </body>
 </html>

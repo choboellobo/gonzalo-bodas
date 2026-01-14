@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <url>
+    <loc>https://molinorosales.com/</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://molinorosales.com/images/logo.png</image:loc>
+      <image:title>Molino San Miguel de Rosales</image:title>
+      <image:caption>Finca histórica para bodas y eventos en Madrid</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://molinorosales.com/finca.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://molinorosales.com/images/finca.png</image:loc>
+      <image:title>La Finca - Molino San Miguel de Rosales</image:title>
+      <image:caption>Espacio histórico del siglo XVII</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://molinorosales.com/bodas.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://molinorosales.com/images/bodas/414f3d756ca97ab54bf781b0a848f081.jpg</image:loc>
+      <image:title>Bodas en Molino Rosales</image:title>
+      <image:caption>Celebra tu boda perfecta en un entorno histórico único</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://molinorosales.com/eventos.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://molinorosales.com/images/eventos.png</image:loc>
+      <image:title>Eventos Corporativos</image:title>
+      <image:caption>Espacios únicos para eventos corporativos y celebraciones</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://molinorosales.com/rodajes.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://molinorosales.com/images/rodajes.png</image:loc>
+      <image:title>Rodajes y Localizaciones</image:title>
+      <image:caption>Localización perfecta para cine, TV y publicidad</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://molinorosales.com/contacto.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+</urlset>

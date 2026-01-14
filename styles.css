@@ -104,6 +104,43 @@ body {
     margin: 0 5px;
 }
 
+/* Breadcrumbs */
+.breadcrumbs {
+    background-color: #f8f9f6;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.breadcrumbs ol {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+}
+
+.breadcrumbs li {
+    color: #666;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    content: '>';
+    margin: 0 10px;
+    color: #ccc;
+}
+
+.breadcrumbs a {
+    color: #5d7a5f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumbs a:hover {
+    color: #4a6352;
+}
+
 /* Hamburger Menu */
 .hamburger {
     display: none;
@@ -882,18 +919,32 @@ body {
     transform: translateY(-5px);
 }
 
-.service-item img {
+.service-icon {
     width: 120px;
     height: 120px;
-    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     margin-bottom: 20px;
     border: 3px solid #5d7a5f;
-    transition: border-color 0.3s ease;
+    background-color: #f8f9f6;
+    transition: all 0.3s ease;
 }
 
-.service-item:hover img {
+.service-icon i {
+    font-size: 48px;
+    color: #5d7a5f;
+    transition: color 0.3s ease;
+}
+
+.service-item:hover .service-icon {
     border-color: #4a6352;
+    background-color: #5d7a5f;
+}
+
+.service-item:hover .service-icon i {
+    color: #ffffff;
 }
 
 .service-item h3 {
@@ -912,9 +963,13 @@ body {
         margin-top: 40px;
     }
     
-    .service-item img {
+    .service-icon {
         width: 100px;
         height: 100px;
+    }
+    
+    .service-icon i {
+        font-size: 40px;
     }
     
     .service-item h3 {

@@ -1,0 +1,177 @@
+{
+  "siteInfo": {
+    "title": "Molino Rosales",
+    "subtitle": "Finca · Catering · Eventos",
+    "description": "Experiencias únicas en un entorno excepcional",
+    "contact": {
+      "phone": "+34 686 943 435",
+      "email": "info@molinorosales.com",
+      "address": "Finca San Miguel, Rosales del Canal"
+    },
+    "social": {
+      "whatsapp": "https://wa.me/",
+      "instagram": "https://instagram.com/",
+      "facebook": "https://facebook.com/"
+    }
+  },
+  "pages": {
+    "index": {
+      "title": "Inicio",
+      "hero": {
+        "title": "Molino Rosales",
+        "subtitle": "Experiencias únicas en un entorno excepcional",
+        "image": "images/b25d49bd8ef14683d4a0ecbd8257a836.jpg"
+      },
+      "gridImages": {
+        "bodas": "images/855d34ae737cdec8200449ee5f11e934.jpg",
+        "eventos": "images/89b2f04005508def527ed363e171eae9.jpg",
+        "rodajes": "images/89b2f04005508def527ed363e171eae9.jpg",
+        "finca": "images/3870fed9eca5c3e01b8af1613d71e9af.jpg",
+        "weddingPlanning": "images/b55cfdb062b62c2a59cce0986c22d4c0.jpg",
+        "contacto": "images/a5cb20d00e84656ffb944bcf2acbd39a.jpg"
+      }
+    },
+    "finca": {
+      "title": "FINCA",
+      "description": [
+        "En el corazón de la provincia de Guadalajara, a tan solo 15 minutos de la capital, se alza majestuoso el Molino San Miguel de Rosales, una finca de ensueño que combina la elegancia rústica con la sofisticación moderna.",
+        "Esta histórica propiedad, cuidadosamente restaurada, conserva todo el encanto de su arquitectura original mientras ofrece las comodidades y servicios más exquisitos para hacer de su evento una experiencia verdaderamente inolvidable.",
+        "Si desea conocerla en detalle puede reservar una visita o explorar el jardín a través de nuestro Tour 360°."
+      ],
+      "tourUrl": "https://woow360.com/es/eventos-marketing-y-publicidad+horche/finca-molino-rosales-p-3850.html?fbclid=IwAR25dCCdC8fnNTOG9BCQNQBIMgo4Z2MvKskZrz1Bs2zeUvhLfEXQR-8nxzA"
+    },
+    "bodas": {
+      "title": "BODAS",
+      "description": [
+        "El Molino San Miguel de Rosales, testigo de siglos de historia, es el escenario perfecto para celebrar su boda, revivir la magia del pasado y crear un evento único e inolvidable.",
+        "Cada rincón de esta finca encierra un relato que se fusionará con su historia de amor."
+      ],
+      "weddingPlanner": {
+        "title": "WEDDING PLANNER",
+        "description": [
+          "Esta finca es el lienzo perfecto para una boda de ensueño. Con una amplia gama de servicios, desde la coordinación del evento hasta la decoración.",
+          "Ofrecemos la excelencia en cada detalle, para que vivan una celebración única y especial. Con años de experiencia en la organización de eventos, sabemos cómo transformar cualquier ocasión en un momento inolvidable, sin importar el tamaño o el estilo."
+        ]
+      },
+      "catering": {
+        "title": "CATERING",
+        "description": "Le ofrecemos una amplia variedad de opciones de catering para que pueda personalizar su evento al estilo que desee. Menús personalizados y a medida. Desde la cocina tradicional española hasta las tendencias culinarias más innovadoras y creativas a manos de nuestros colaboradores:",
+        "additionalText": [
+          "Le brindarán un servicio a medida para que su banquete sea inolvidable.",
+          "¿Prefiere un buffet informal, una cena de gala o un cocktail?",
+          "¡Las posibilidades son infinitas!"
+        ]
+      },
+      "fotografo": {
+        "title": "FOTÓGRAFO",
+        "description": [
+          "En la finca el Molino San Miguel de Rosales, tendrá la libertad de que elija al fotógrafo que mejor se adapte a su estilo.",
+          "Su boda es un momento mágico que merece ser inmortalizado, además le ofrecemos una selección de fotógrafos de primer nivel."
+        ]
+      },
+      "musica": {
+        "title": "MÚSICA",
+        "description": [
+          "La música es un elemento fundamental para crear una atmósfera emotiva y divertida. Desde un cuarteto de cuerda para la ceremonia, hasta una banda de rock para la fiesta.",
+          "Ofrecemos opciones para todos los gustos. Nuestro equipo de sonido le asesorará para elegir la música perfecta para cada momento de su evento.",
+          "Ya sea una boda, un cumpleaños, una puesta de largo, un evento de empresa, etc. Además, puede traer su propio DJ o grupo musical y disfrutar de una celebración totalmente personalizada."
+        ],
+        "recommendations": [
+          "Hemos seleccionado cuidadosamente a los mejores grupos musicales de la zona, cada uno con un estilo único y especial. ¡Prepárese para descubrir su banda favorita!",
+          "Desde la Finca Molino San Miguel de Rosales le recomendamos las siguientes opciones:"
+        ]
+      }
+    },
+    "eventos": {
+      "title": "EVENTOS",
+      "description": [
+        "El Molino de San Miguel de Rosales ofrece un entorno inspirador y tranquilo para fomentar la creatividad y la productividad. Nuestro equipo le proporcionará todos los servicios necesarios para que su evento sea un éxito y logre sus objetivos.",
+        "Los espacios de esta finca están diseñados para adaptarse a las necesidades de su empresa. Desde reuniones ejecutivas y conferencias hasta presentaciones de productos y cenas de gala.",
+        "Rodeado de naturaleza, ubicado a 50 minutos de Madrid y a 15 minutos de Guadalajara, este lugar ideal para organizar eventos corporativos que fomenten la creatividad y motiven a sus empleados. Nuestras amplias zonas verdes ofrecen un entorno tranquilo y productivo para sus reuniones y celebraciones.",
+        "Vive una experiencia única en el Molino de San Miguel de Rosales. Nuestra finca le ofrece un entorno mágico para celebrar cualquier ocasión especial, junto con una atención personalizada y una amplia gama de servicios.",
+        "Desde la decoración, hasta el catering, nuestro equipo se encargará de cada detalle para que su evento sea perfecto, ya sea un aniversario, un cumpleaños, una puesta de largo. Dinos de que se trata y haremos que la experiencia sea inolvidable."
+      ]
+    },
+    "rodajes": {
+      "title": "RODAJES",
+      "description": [
+        "El Molino de San Miguel de Rosales: el plató de cine al aire libre. Nuestra finca, con su encanto rústico y su entorno natural, ofrece un sinfín de posibilidades para realizar producciones audiovisuales.",
+        "Contamos con amplios jardines, y un equipo de profesionales dispuestos a ayudarle en todo momento.",
+        "¡Descubra por qué esta finca es el lugar perfecto para sus próximos proyectos!"
+      ]
+    },
+    "contacto": {
+      "title": "CONTÁCTANOS",
+      "subtitle": "Vive una experiencia excepcional en nuestra finca.\nNosotros nos encargamos de todo"
+    }
+  },
+  "links": {
+    "catering": [
+      {
+        "name": "TRICICLO CATERING",
+        "url": "https://www.triciclocatering.com/"
+      },
+      {
+        "name": "GOIZEKO CATERING",
+        "url": "https://www.catering-goizeko.com/#WeddingPlanner"
+      },
+      {
+        "name": "LA JULIANA CATERING",
+        "url": "https://www.lajulianacatering.com/"
+      }
+    ],
+    "fotografo": [
+      {
+        "name": "RAFAEL CUCHARERO",
+        "url": "https://rafacucharero.es/"
+      },
+      {
+        "name": "BEATRIZ TUDANCA",
+        "url": "https://beatriztudanca.com/"
+      },
+      {
+        "name": "GLORIA BYLER",
+        "url": "https://gloriabyler.com/"
+      }
+    ],
+    "musica": [
+      {
+        "name": "TU ESTRIBILLO",
+        "url": "https://www.instagram.com/tuestribillo/"
+      },
+      {
+        "name": "DANDOTE RITMO",
+        "url": "https://www.instagram.com/dandoteritmoeventos/"
+      }
+    ]
+  },
+  "images": {
+    "logo": "images/logo.png",
+    "illustrations": {
+      "finca": "images/finca.png",
+      "bodas": "images/bodas.png",
+      "eventos": "images/eventos.png",
+      "rodajes": "images/rodajes.png",
+      "contacto": "images/contacto.png"
+    },
+    "gallery": {
+      "finca": [
+        "images/finca/finca-agua.jpg",
+        "images/finca/finca_alto.jpg",
+        "images/finca/myegoo_20140611114351editar2_o.jpg",
+        "images/finca/myegoo_20170514080109min_o.jpg"
+      ],
+      "bodas": [
+        "images/bodas/414f3d756ca97ab54bf781b0a848f081.jpg",
+        "images/bodas/1d35a91a3be881201cb33ae7a7021eb4.png",
+        "images/bodas/bdf7e059bc8ca9a61de14e34e5c91756.jpg"
+      ]
+    },
+    "special": {
+      "rodajes": "images/24f2631168c228e86e2a2cbfacf4c393.png"
+    }
+  },
+  "files": {
+    "dossier": "images/Dosier Molino Rosales.pdf"
+  }
+}
