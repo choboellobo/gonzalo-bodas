@@ -268,7 +268,7 @@ class AdminPanel {
                                 <i class="fas fa-image"></i>
                             </button>
                         </div>
-                        ${gridImages[key] ? `<img src="${gridImages[key]}" alt="${label}" class="image-preview">` : ''}
+                        ${gridImages[key] ? `<img src="${gridImages[key].startsWith('/') ? gridImages[key] : '/' + gridImages[key]}" alt="${label}" class="image-preview">` : ''}
                     </div>
                 `;
             }
@@ -539,8 +539,8 @@ class AdminPanel {
     }
 
     createImageItem(imagePath, category, index) {
-        // Ajustar la ruta de la imagen para el contexto del admin
-        const adjustedPath = imagePath.startsWith('/') ? imagePath : `../${imagePath}`;
+        // Ajustar la ruta de la imagen para el contexto del admin - usar ruta absoluta desde la raíz
+        const adjustedPath = imagePath.startsWith('/') ? imagePath : `/${imagePath}`;
         
         return `
             <div class="image-item">
@@ -1083,7 +1083,7 @@ function updateGridImage(key, value) {
             preview.className = 'image-preview';
             imageField.appendChild(preview);
         }
-        preview.src = value;
+        preview.src = value.startsWith('/') ? value : '/' + value;
         preview.alt = key;
     } else if (preview) {
         preview.remove();
